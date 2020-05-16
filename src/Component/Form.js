@@ -36,7 +36,7 @@ function Form({recogerData, idEdit, objetoEdit, dataEdit}) {
             recogerData(obj)
         }
 
-        if (mode) {
+        if (mode && tarea) {
             //mandamos al app js la tarea editada y seteamos
             objetoEdit(tarea, idEdit)
             setMode(false)
